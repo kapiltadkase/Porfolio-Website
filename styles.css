@@ -1,0 +1,90 @@
+/* Reset some default spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General body styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Hero section with gradient background */
+.hero {
+  background: linear-gradient(120deg, #4e54c8, #8f94fb);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+/* Section title styling */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #4e54c8;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #4e54c8;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* Resume lists */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "✓ ";
+  color: #4e54c8;
+}
+
+/* Project cards */
+.project {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project h5 {
+  color: #4e54c8;
+}
+
+/* Footer */
+footer {
+  background-color: #4e54c8;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
